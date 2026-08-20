@@ -1,0 +1,56 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-cream: var(--cream);
+  --color-cream-foreground: var(--cream-foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --font-sans: var(--font-grotesk), 'Space Grotesk', sans-serif;
+  --font-display: var(--font-pixel), 'Pixelify Sans', sans-serif;
+}
+
+:root {
+  color-scheme: light;
+  /* Locked palette: Robin Neon lime + warm cream + black. Nothing else. */
+  --background: #c6ff00;
+  --foreground: #101010;
+  --cream: #f4f0df;
+  --cream-foreground: #101010;
+  --card: #f4f0df;
+  --card-foreground: #101010;
+  --border: #101010;
+  --input: #f4f0df;
+  --ring: #101010;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; background: var(--background); }
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-grotesk), 'Space Grotesk', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+button, input, textarea, select { font: inherit; }
+::selection { background: var(--foreground); color: var(--background); }
+
+/* Keep pixel artwork crisp at every scale. */
+.pixelated { image-rendering: pixelated; image-rendering: crisp-edges; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
