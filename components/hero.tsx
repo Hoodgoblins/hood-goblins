@@ -32,10 +32,10 @@ export function Hero() {
             Small, green, and up to no good.
           </h1>
           <p className="mt-5 font-display text-xl font-medium md:text-2xl text-pretty">
-            1,500 goblins raiding Robinhood chain.
+            3,000 goblins raiding Robinhood chain.
           </p>
           <p className="mt-5 max-w-md text-base leading-relaxed opacity-80">
-            Hood Goblins is a 1,500-piece pixel art collection built on Robinhood chain. Small, sharp, and always up to
+            Hood Goblins is a 3,000-piece pixel art collection built on Robinhood chain. Small, sharp, and always up to
             something. Whitelist applications are open now.
           </p>
           <div className="mt-8">

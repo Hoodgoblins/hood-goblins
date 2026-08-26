@@ -27,7 +27,7 @@ export const NAV_SECTIONS = [
 ]
 
 export const STATS = [
-  { label: "Supply", value: "1,500" },
+  { label: "Supply", value: "3,000" },
   { label: "Chain", value: "Robinhood" },
   { label: "Mint", value: "TBA" },
 ]
@@ -46,7 +46,7 @@ export const ROADMAP = [
   {
     phase: "Phase 3",
     title: "The Mint",
-    text: "1,500 Hood Goblins go live on Robinhood chain.",
+    text: "3,000 Hood Goblins go live on Robinhood chain.",
   },
   {
     phase: "Phase 4",

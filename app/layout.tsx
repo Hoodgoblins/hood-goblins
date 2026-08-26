@@ -19,11 +19,11 @@ const grotesk = Space_Grotesk({
 export const metadata: Metadata = {
   title: "Hood Goblins",
   description:
-    "Small, green, and up to no good. 1,500 pixel-art goblins raiding Robinhood chain. Whitelist applications open now.",
+    "Small, green, and up to no good. 3,000 pixel-art goblins raiding Robinhood chain. Whitelist applications open now.",
   generator: "v0.app",
   openGraph: {
     title: "Hood Goblins",
-    description: "Small, green, and up to no good. 1,500 goblins raiding Robinhood chain.",
+    description: "Small, green, and up to no good. 3,000 goblins raiding Robinhood chain.",
     images: [ASSETS.hero],
   },
   icons: { icon: ASSETS.logo },
