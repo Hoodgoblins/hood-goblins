@@ -3,6 +3,11 @@
 
 export const SOCIAL_X = "https://x.com/HoodGoblins"
 
+// Flip this to true to reopen WL applications. When false, the /apply page
+// shows the closed message instead of the form. This is the only line you
+// need to change to open or close applications.
+export const APPLICATIONS_OPEN = false
+
 // The pinned tweet URL is not finalized yet. Change it here once only and
 // every WL task link that points at the pin tweet updates automatically.
 export const PINNED_TWEET = "https://x.com/HoodGoblins"

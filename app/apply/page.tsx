@@ -1,7 +1,8 @@
 import Link from "next/link"
 import type { Metadata } from "next"
 import { ApplicationForm } from "@/components/application-form"
-import { ASSETS } from "@/lib/site"
+import { ApplicationsClosed } from "@/components/applications-closed"
+import { APPLICATIONS_OPEN, ASSETS } from "@/lib/site"
 
 export const metadata: Metadata = {
   title: "Apply for WL — Hood Goblins",
@@ -29,13 +30,13 @@ export default function ApplyPage() {
         <div className="mt-10">
           <h1 className="font-display text-5xl font-bold tracking-tight md:text-6xl text-balance">Apply for WL</h1>
           <p className="mt-4 text-base leading-relaxed opacity-80">
-            Complete each task below, then submit your wallet to apply.
+            {APPLICATIONS_OPEN
+              ? "Complete each task below, then submit your wallet to apply."
+              : "The window's shut, for now."}
           </p>
         </div>
 
-        <div className="mt-10">
-          <ApplicationForm />
-        </div>
+        <div className="mt-10">{APPLICATIONS_OPEN ? <ApplicationForm /> : <ApplicationsClosed />}</div>
       </div>
     </main>
   )
